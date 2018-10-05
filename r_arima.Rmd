@@ -1,0 +1,65 @@
+---
+title: "Forecasting Water Levels of Well G-1260"
+subtitle: "Time Series analysis Seasonal ARIMA"
+author: "Chris Nobblitt"
+date: "October 4, 2018"
+output: html_document
+---
+
+```{r, initial}
+library(tidyverse)
+library(readxl)
+library(lubridate)
+
+df <- read_excel("data/G-1260_T.xlsx", sheet = "Well")
+```
+
+```{r, Transrorm into Hourly Data}
+
+# Start Date: 10/1/2007 1:00 AM
+# End Date  : 6/8/2018 11:45 AM
+
+# Create a sequence of time stamps every 15 minutes from our start date
+start_date <- as.POSIXct('2007-10-01 01:00:00',tz='UTC')
+end_date <- as.POSIXct('2018-06-08 11:00:00', tz='UTC')
+time_range <- seq(from=start_date, to=end_date, by="15 min")
+rm(start_date, end_date)
+
+# Create a column with the full date time
+df$full_time <- paste0(as.character(df$date),
+                       " ",
+                      as.character(hour(df$time)),
+                      ":",
+                      as.character(minute(df$time)),
+                      ":00")
+
+df$full_time <- as.POSIXct(df$full_time, tz="EDT")
+
+
+# Combine with the full time sequence
+df_complete <- df %>%
+  right_join(as.data.frame(time_range), by= c("full_time" = "time_range"))
+
+
+# Reduce to hourly data by taking the average over that hour
+df_hourly <- df_complete %>%
+  group_by(date, hour(full_time)) %>%
+  summarise(hour_corrected = mean(Corrected, na.rm=T))
+
+# Combine the date and time again into one column
+df_hourly <- df_hourly %>%
+  mutate(datetime = paste0(as.character(date), " ",
+          as.character(`hour(full_time)`),
+          ":00:00"),
+    datetime= as.POSIXct(datetime))
+
+```
+
+
+
+```{r, Check For Stationarity}
+
+
+```
+
+
