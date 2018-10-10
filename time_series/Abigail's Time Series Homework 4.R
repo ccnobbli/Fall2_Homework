@@ -48,6 +48,16 @@ plot(decomp_well_v)
 #estimate # of seasonal differences neccesary
 nsdiffs(well_t, alpha = 0.05, max.D = 1)
 
+#automated seasonal differencing for daily season
+ndiffs(diff(well_t, lag = 24))
+#0
+
+#automated seasonal differencing for annual season
+ndiffs(diff(well_t, lag = 24*365.25))
+#1
+###does this mean that we need to take an annual difference?
+
+
 #library(tseries)
 #adf.test(well_t, alternative = "stationary", k = 0)
 
@@ -81,6 +91,11 @@ x5.24.cos=cos(2*pi*index.ts*5/24)
 x.reg=cbind(x1.sin,x1.cos,x2.sin,x2.cos,x3.sin,x3.cos,x4.sin,x4.cos,x5.sin,x5.cos,x1.24.sin,x1.24.cos,x2.24.sin,x2.24.cos,x3.24.sin,x3.24.cos,x4.24.sin,x4.24.cos,x5.24.sin,x5.24.cos)
 arima.1<-Arima(well_t,order=c(0,0,0),xreg=x.reg)
 summary(arima.1)
+
+
+#trying to fit a fourier
+fit <- auto.arima(well_t, seasonal=FALSE,
+                  xreg=fourier(, K=c(10,10)))
 
 
 
