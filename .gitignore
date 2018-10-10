@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 data/G-1260_T.xlsx
+data/G-1260_T.csv
+time_series/.ipynb_checkpoints/data_cleaning-checkpoint.ipynb
