@@ -155,6 +155,17 @@ newx.reg=cbind(x1.sin,x1.cos,x2.sin,x2.cos,x3.sin,x3.cos,x4.sin,x4.cos,x5.sin,x5
 
 pred <- predict(object = arima.2, n.ahead = 168, newxreg = newx.reg)
 
+
+library(ggplot2)
+
+ggplot() +
+  geom_line(aes(y=well_t[(length(well_t)-167):length(well_t)], x=seq(1,168))) +
+  geom_vline(aes(xintercept=168)) +
+  geom_line(aes(y=well_v, x=seq(169,336)))+
+  geom_line(aes(y=pred$pred, x=seq(169,336), color="red"))
+  
+  
+
 error_well=well_v-pred$pred
 MAE=mean(abs(error_well))
 MAPE=mean(abs(error_well)/abs(well_v))
