@@ -123,11 +123,40 @@ Acf(arima.2$residuals, lag.max = 50)
 
 #well_p <- forecast(object = arima.2, h = length(well_v))
 
+#All of this below sets a new set of x.reg values based on the well_v x values -----------------------
+
+index.ts=seq(length(well_t)+1,length(well_t) + length(well_v))
+x1.sin=sin(2*pi*index.ts*1/8766)
+x1.cos=cos(2*pi*index.ts*1/8766)
+x2.sin=sin(2*pi*index.ts*2/8766)
+x2.cos=cos(2*pi*index.ts*2/8766)
+x3.sin=sin(2*pi*index.ts*3/8766)
+x3.cos=cos(2*pi*index.ts*3/8766)
+x4.sin=sin(2*pi*index.ts*4/8766)
+x4.cos=cos(2*pi*index.ts*4/8766)
+x5.sin=sin(2*pi*index.ts*5/8766)
+x5.cos=cos(2*pi*index.ts*5/8766)
+x1.24.sin=sin(2*pi*index.ts*1/24)
+x1.24.cos=cos(2*pi*index.ts*1/24)
+x2.24.sin=sin(2*pi*index.ts*2/24)
+x2.24.cos=cos(2*pi*index.ts*2/24)
+x3.24.sin=sin(2*pi*index.ts*3/24)
+x3.24.cos=cos(2*pi*index.ts*3/24)
+x4.24.sin=sin(2*pi*index.ts*4/24)
+x4.24.cos=cos(2*pi*index.ts*4/24)
+x5.24.sin=sin(2*pi*index.ts*5/24)
+x5.24.cos=cos(2*pi*index.ts*5/24)
+newx.reg=cbind(x1.sin,x1.cos,x2.sin,x2.cos,x3.sin,x3.cos,x4.sin,x4.cos,x5.sin,x5.cos,x1.24.sin,x1.24.cos,x2.24.sin,x2.24.cos,x3.24.sin,x3.24.cos,x4.24.sin,x4.24.cos,x5.24.sin,x5.24.cos)
 
 
+#fore <- forecast(arima.2, h = 168, xreg = newx.reg)
 
+#Below calculates the MAE and MAPE based on the predict functin's "pred" column.. honestly not sure what that is though ---------------------
 
+pred <- predict(object = arima.2, n.ahead = 168, newxreg = newx.reg)
 
-
+error_well=well_v-pred$pred
+MAE=mean(abs(error_well))
+MAPE=mean(abs(error_well)/abs(well_v))
 
 
