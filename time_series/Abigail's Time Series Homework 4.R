@@ -161,8 +161,10 @@ library(ggplot2)
 ggplot() +
   geom_line(aes(y=well_t[(length(well_t)-167):length(well_t)], x=seq(1,168))) +
   geom_vline(aes(xintercept=168)) +
-  geom_line(aes(y=well_v, x=seq(169,336)))+
-  geom_line(aes(y=pred$pred, x=seq(169,336), color="red"))
+  geom_line(aes(y=well_v, x=seq(169,336)), color="black")+
+  geom_line(aes(y=pred$pred, x=seq(169,336)), color="red") +
+  labs(x = "Hour", y ="Well-height (ft)") + 
+  scale_color_manual(labels = c("Actual", "Predicted"), values = c("black", "red"))
   
   
 
