@@ -1,7 +1,8 @@
+
 library(tidyverse)
 
 #read in well data aggregated monthly in Python
-df <- read_csv("C:\\Users\\Abigail\\Documents\\MSA\\Python\\G-1260_Monthly.csv", col_names= TRUE)
+df <- read_csv("C:\\Users\\lasky\\Google Drive\\Graduate School _ Jobs\\NCSU MSA\\Programming\\Git\\Fall2_Homework\\data\\G-1260_Hourly.csv", col_names= TRUE)
 
 
 #Develop a time series data object named 'well'
@@ -15,7 +16,7 @@ View(well)
 
 
 #dealing with NA data
-install.packages("imputeTS")
+#install.packages("imputeTS")
 library(imputeTS)
 
 plotNA.distribution(well)
@@ -89,13 +90,43 @@ x4.24.cos=cos(2*pi*index.ts*4/24)
 x5.24.sin=sin(2*pi*index.ts*5/24)
 x5.24.cos=cos(2*pi*index.ts*5/24)
 x.reg=cbind(x1.sin,x1.cos,x2.sin,x2.cos,x3.sin,x3.cos,x4.sin,x4.cos,x5.sin,x5.cos,x1.24.sin,x1.24.cos,x2.24.sin,x2.24.cos,x3.24.sin,x3.24.cos,x4.24.sin,x4.24.cos,x5.24.sin,x5.24.cos)
-arima.1<-Arima(well_t,order=c(0,0,0),xreg=x.reg)
+#arima.1<-Arima(well_t,order=c(12,1,2),seasonal=list(order=c(0,0,1),period=24),xreg=x.reg)
+arima.2<-Arima(well_t,order=c(12,1,2),xreg=x.reg)
 summary(arima.1)
 
 
 #trying to fit a fourier
-fit <- auto.arima(well_t, seasonal=FALSE,
-                  xreg=fourier(, K=c(10,10)))
+#fit <- auto.arima(well_t, seasonal=FALSE,xreg=fourier(well_t, K=c(5,5)))
+#summary(fit)
+
+#fitseason <- auto.arima(well_t, seasonal=TRUE,xreg=fourier(well_t, K=c(5,5)))
+#summary(fitseason)
+
+install.packages('tseries')
+library('tseries')
+
+adf.test(arima.2$residuals, k = 0)
+
+White.LB <- rep(NA, 100)
+for(i in 1:100){
+  White.LB[i] <- Box.test(arima.2$residuals, lag = i, type = "Ljung", fitdf = 1)$p.value
+}
+
+White.LB <- pmin(White.LB, 0.2)
+barplot(White.LB, main = "Ljung-Box Test P-values", ylab = "Probabilities", xlab = "Lags", ylim = c(0, 0.2))
+abline(h = 0.01, lty = "dashed", col = "black")
+abline(h = 0.05, lty = "dashed", col = "black")
+
+Acf(arima.2$residuals, lag.max = 50)
+
+#accuracy(f = arima.2, x = well_v)
+
+#well_p <- forecast(object = arima.2, h = length(well_v))
+
+
+
+
+
 
 
 
