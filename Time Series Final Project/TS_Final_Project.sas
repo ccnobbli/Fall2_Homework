@@ -7,5 +7,22 @@ select All_hourly;
 run;quit;
 */
 
+proc sort data = TS.All_hourly out = work.All;
+	by DateHour;
+run;
 
-proc expand data = TS.All_Hourly
+data All_n;
+	set All;
+	SeqNo = _n_;
+run;
+
+/* Impute missing values in a linear fashion */
+proc expand data=All_n out=All_NoNA;
+	convert WellLevel=linear / method=join;
+	id SeqNo;
+run;
+
+data All_NoNA (keep = DateHour WellLevel_Imp RainLevel TideLevel);
+	set All_NoNA (rename=(linear=WellLevel_Imp));
+run;
+
