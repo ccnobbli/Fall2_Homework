@@ -32,12 +32,12 @@
         <mark key="^" line="30" column="32" />
         <mark key="." line="7" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539741875320">
-        <mark key="'" line="90" column="16" />
-        <mark key="[" line="91" column="0" />
-        <mark key="]" line="91" column="24" />
-        <mark key="." line="91" column="24" />
-        <mark key="^" line="86" column="15" />
+      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539771612840">
+        <mark key="'" line="102" column="16" />
+        <mark key="[" line="92" column="0" />
+        <mark key="]" line="92" column="28" />
+        <mark key="." line="92" column="28" />
+        <mark key="^" line="90" column="19" />
       </file>
       <file name="$USER_HOME$/Documents/great_expectations_las/docs/source/glossary.rst" timestamp="1530302515301">
         <mark key="[" line="77" column="0" />
@@ -91,8 +91,8 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="&quot;" type="4">
-        <text>5</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIHRyeToK</text>
       </register>
       <register name="-" type="4">
         <text>5</text>
@@ -103,35 +103,37 @@
       <register name="0" type="4">
         <text encoding="base64">Zm9yIHBvc3QgaW4gcG9zdHM6CiAgICBwcmludChtYXRjaF90b2tlbl9pbl90aXRsZV9saXN0KHBvc3RbJ3RpdGxlJ10sIGtleXdvcmRzKSkK</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIHRyeToK</text>
+      </register>
+      <register name="2" type="4">
+        <text>except HTTPError:
+        time.sleep(10)
+        continue</text>
+      </register>
+      <register name="3" type="4">
         <text>printProgressBar(num_done, num_pages*20, prefix='Progress:', suffix='Complete', length=50)
             num_done += 1</text>
       </register>
-      <register name="2" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgam9iX2xvY2F0aW9ucy5hcHBlbmQoIiIpCg==</text>
       </register>
-      <register name="3" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgIyBBZGQgYW4gZW1wdHkgZWxlbWVudCBpZiBzb21ldGhpbmcgd2VudCB3cm9uZyAtIHdlIGNhbiBkZWFsIHdpdGggaXQgbGF0ZXIK</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBlbHNlOgo=</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICBpZiBsb2NhdGlvbiBpcyBub3QgTm9uZToK</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>lse:
             # Add an empty element so we know something went wrong - we can deal with it later
             job_descriptions.append(&quot;&quot;)</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CiMgSW5bMTI0XTo=</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuMDUpCg==</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAjIEV4dHJhY3QgdGhlIGpvYiBkZXNjcmlwdGlvbiBmb3IgZWFjaCB0dXJuc3RpbGVMaW5rIG9uIHRoaXMgcGFnZSBvZiBzZWFyY2ggcmVzdWx0cyAK</text>
       </register>
     </registers>
     <search>
