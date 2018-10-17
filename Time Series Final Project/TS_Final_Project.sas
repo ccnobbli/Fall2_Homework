@@ -94,7 +94,14 @@ proc sgplot data=RainWell;
 	series x=DateHour1 y=RainLevel;
 run;
 quit; *picked 16 lags;
-
+proc sgplot data=RainWell;
+	series x=DateHour1 y=WellLevel;
+run;
+quit; *picked 16 lags;
+proc sgplot data=RainWell;;
+	series x=DateHour1 y=RainLevel;
+run;
+quit; *picked 16 lags;
 
 
 /******************************BEGIN MODELING****************************************/
@@ -126,6 +133,31 @@ set All_NoNA;
 	Well1=lag1(WellLevel);
 	Well2=lag2(WellLevel);
 	Welld = WellLevel - lag1(WellLevel);
+	pi=constant("pi"); *change pi to constant;
+	s1=sin(2*pi*1*_n_/14.37);
+	c1=cos(2*pi*1*_n_/14.37);
+	s2=sin(2*pi*2*_n_/14.37);
+	c2=cos(2*pi*2*_n_/14.37);
+	s3=sin(2*pi*3*_n_/14.37);
+	c3=cos(2*pi*3*_n_/14.37);
+	s4=sin(2*pi*4*_n_/14.37);
+	c4=cos(2*pi*4*_n_/14.37);
+	s5=sin(2*pi*1*_n_/24.7);
+	c5=cos(2*pi*1*_n_/24.7);
+	s6=sin(2*pi*2*_n_/24.7);
+	c6=cos(2*pi*2*_n_/24.7);
+	s7=sin(2*pi*3*_n_/24.7);
+	c7=cos(2*pi*3*_n_/24.7);
+	s8=sin(2*pi*4*_n_/24.7);
+	c8=cos(2*pi*4*_n_/24.7);
+	s9=sin(2*pi*1*_n_/12.5);
+	c9=cos(2*pi*1*_n_/12.5);
+	s10=sin(2*pi*2*_n_/12.5);
+	c10=cos(2*pi*2*_n_/12.5);
+	s11=sin(2*pi*3*_n_/12.5);
+	c11=cos(2*pi*3*_n_/12.5);
+	s12=sin(2*pi*4*_n_/12.5);
+	c12=cos(2*pi*4*_n_/12.5);
 run;
 /*Subset data. Last week is the test set */
 data train;
@@ -140,7 +172,7 @@ run;
 
 /* First need to check residuals are stationary in mean and variance  */
 proc arima data=train;
-identify var= WellLevel crosscorr=(RainLevel Rain1 Rain2 Rain3 Rain4 Rain5 Rain6 Rain7 Rain8 Rain9 Rain10 Rain11 Rain12 Rain13 Rain14 Rain15 Rain16 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5);
+identify var= WellLevel crosscorr=(RainLevel Rain1-Rain16 TideLevel Tide1-Tide5 s1-c4);
 estimate p=2 input=(RainLevel Rain1 Rain2 Rain3 Rain4 Rain5 Rain6 Rain7 Rain8 Rain9 Rain10 Rain11 Rain12 Rain13 Rain14 Rain15 Rain16 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5);
 forecast out=resid1;
 run;
@@ -154,21 +186,80 @@ quit;
 *We have stationairity;
 
 proc glmselect data=train;
-model WellLevel=RainLevel Rain1 Rain2 Rain3 Rain4 Rain5 Rain6 Rain7 Rain8 Rain9 Rain10 Rain11 Rain12 Rain13 Rain14 Rain15 Rain16 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5/selection=stepwise select=AICC;
+model WellLevel=RainLevel Rain1-Rain16 TideLevel Tide1-Tide5 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12/selection=stepwise select=AICC;
 run;
 quit;
 
-/*proc glmselect hinted at these lags*/
+
+/*No white noise model*/
 proc arima data=train;
-identify var=WellLevel crosscorr=(RainLevel TideLevel);
-estimate input=((1,2,3) RainLevel (1,3,4) TideLevel) p=2 method=ML;
+identify var=WellLevel(1) crosscorr=(RainLevel TideLevel);
+estimate input=((1,2,3) RainLevel (1,3,4) TideLevel) p=15 q=9 method=ML;*no white noise;
+forecast out=abimodel back=168 lead=168;
 run;
 quit;
+
+/**/
+
+proc arima data=train;
+identify var=WellLevel(1) crosscorr=(RainLevel TideLevel);
+estimate input=(/(1) RainLevel (1) TideLevel) p=9 q=9 method=ML; *large decrease in white noise;
+forecast out=p9q9model back=168 lead=168;
+run;
+quit;
+
+
 
 /*denominator term*/
 
 proc arima data=train;
-identify var=WellLevel crosscorr=(RainLevel TideLevel);
-estimate input=(/(1) RainLevel (1,3,4) TideLevel) p=2 method=ML; *change of 20 with tide level changed to /(1);
+identify var=WellLevel(1) crosscorr=(RainLevel TideLevel);
+estimate input=(/(1) RainLevel (1) TideLevel) p=1 method=ML; *Slight decrease in white noise;
+forecast out=p1model back=168 lead=168;
 run;
 quit;
+
+/* Measure of accuracy */
+
+data val;
+merge abimodel (rename=(residual=abires)) p9q9model (rename=(residual=p9q9res)) p1model (rename=(residual=p1res));
+if _n_ > 93345;
+run;
+
+data val;
+	set val;
+	absAbiRes=abs(abires);
+	absp9q9Res=abs(p9q9res);
+	absp1Res=abs(p1res);
+	mape_abi=absAbiRes/abs(WellLevel);
+	mape_p9q9=absp9q9Res/abs(WellLevel);
+	mape_p1 =absp1Res/abs(WellLevel);
+run;
+
+proc means data=val;
+	var absAbiRes absp9q9Res absp1Res mape_abi mape_p9q9 mape_p1;
+run; *First model, no white noise model, has the lowest MAPE of 0.0304199;
+
+/* Final test for accuracy of model on test set */
+
+proc arima data=All_NoNA;
+identify var=WellLevel(1) crosscorr=(RainLevel TideLevel);
+estimate input=((1,2,3) RainLevel (1,3,4) TideLevel) p=15 q=9 method=ML;*no white noise;
+forecast out=FinModel back=168 lead=168;
+run;
+quit;
+
+data Fin;
+merge FinModel (rename=(residual=FinRes));
+if _n_ > 93514;
+run;
+
+data Fin;
+	set Fin;
+	absFinRes=abs(FinRes);
+	mape_Fin=absFinRes/abs(WellLevel);
+run;
+
+proc means data=Fin;
+	var absFinRes mape_Fin;
+run; *Final arima model [ARIMA(15,1,9)] MAPE of 0.0432893 on test set;
