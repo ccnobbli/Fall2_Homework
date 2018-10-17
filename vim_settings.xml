@@ -32,7 +32,7 @@
         <mark key="^" line="30" column="32" />
         <mark key="." line="7" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539784392679">
+      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539787940737">
         <mark key="'" line="112" column="16" />
         <mark key="[" line="35" column="7" />
         <mark key="]" line="35" column="7" />
@@ -91,10 +91,10 @@
     <jumps />
     <registers>
       <register name="&quot;" type="4">
-        <text>Data Scientis</text>
+        <text>Business Analyst</text>
       </register>
       <register name="-" type="4">
-        <text>Data Scientis</text>
+        <text>Business Analyst</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxqb2JfZGVzY3JpcHRpb25zXD4=</text>
@@ -103,35 +103,36 @@
         <text encoding="base64">Zm9yIHBvc3QgaW4gcG9zdHM6CiAgICBwcmludChtYXRjaF90b2tlbl9pbl90aXRsZV9saXN0KHBvc3RbJ3RpdGxlJ10sIGtleXdvcmRzKSkK</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">cHJpbnQoIlNhdmVkIGRhdGEgdG8gezB9Ii5mb3JtYXQoc2F2ZV9maWxlKSkK</text>
+        <text encoding="base64">ICAgIGpvYl9kYXRhLnRvX2NzdigiZGF0YS90ZW1wX2pvYl9kZXNjLmNzdiIpCg==</text>
       </register>
       <register name="2" type="4">
+        <text>})
+    job_data = pd.DataFrame({</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">cHJpbnQoIlNhdmVkIGRhdGEgdG8gezB9Ii5mb3JtYXQoc2F2ZV9maWxlKSkK</text>
+      </register>
+      <register name="4" type="4">
         <text>save_file = &quot;data/text_data.csv&quot;
 job_data.to_csv(save_file)</text>
       </register>
-      <register name="3" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgIHRyeToK</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text>except HTTPError:
         time.sleep(10)
         continue</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>printProgressBar(num_done, num_pages*20, prefix='Progress:', suffix='Complete', length=50)
             num_done += 1</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgam9iX2xvY2F0aW9ucy5hcHBlbmQoIiIpCg==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgIyBBZGQgYW4gZW1wdHkgZWxlbWVudCBpZiBzb21ldGhpbmcgd2VudCB3cm9uZyAtIHdlIGNhbiBkZWFsIHdpdGggaXQgbGF0ZXIK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBlbHNlOgo=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBpZiBsb2NhdGlvbiBpcyBub3QgTm9uZToK</text>
+        <text encoding="base64">ICAgICAgICAgICAgIyBBZGQgYW4gZW1wdHkgZWxlbWVudCBpZiBzb21ldGhpbmcgd2VudCB3cm9uZyAtIHdlIGNhbiBkZWFsIHdpdGggaXQgbGF0ZXIK</text>
       </register>
     </registers>
     <search>
