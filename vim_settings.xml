@@ -3,7 +3,7 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1539738405069">
+      <file name="/Dummy.txt" timestamp="1539782703574">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Documents/great_expectations_las/tests/other_expectations/expect_these_tests_to_be_suppressed" timestamp="1536590396442">
@@ -32,12 +32,11 @@
         <mark key="^" line="30" column="32" />
         <mark key="." line="7" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539771612840">
-        <mark key="'" line="102" column="16" />
-        <mark key="[" line="92" column="0" />
-        <mark key="]" line="92" column="28" />
-        <mark key="." line="92" column="28" />
-        <mark key="^" line="90" column="19" />
+      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539782662886">
+        <mark key="'" line="112" column="16" />
+        <mark key="[" line="144" column="0" />
+        <mark key="]" line="144" column="0" />
+        <mark key="." line="144" column="0" />
       </file>
       <file name="$USER_HOME$/Documents/great_expectations_las/docs/source/glossary.rst" timestamp="1530302515301">
         <mark key="[" line="77" column="0" />
@@ -91,11 +90,11 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHRyeToK</text>
+      <register name="&quot;" type="4">
+        <text># Save to a file</text>
       </register>
       <register name="-" type="4">
-        <text>5</text>
+        <text># Save to a file</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxqb2JfZGVzY3JpcHRpb25zXD4=</text>
@@ -104,36 +103,35 @@
         <text encoding="base64">Zm9yIHBvc3QgaW4gcG9zdHM6CiAgICBwcmludChtYXRjaF90b2tlbl9pbl90aXRsZV9saXN0KHBvc3RbJ3RpdGxlJ10sIGtleXdvcmRzKSkK</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHRyeToK</text>
+        <text encoding="base64">cHJpbnQoIlNhdmVkIGRhdGEgdG8gezB9Ii5mb3JtYXQoc2F2ZV9maWxlKSkK</text>
       </register>
       <register name="2" type="4">
+        <text>save_file = &quot;data/text_data.csv&quot;
+job_data.to_csv(save_file)</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIHRyeToK</text>
+      </register>
+      <register name="4" type="4">
         <text>except HTTPError:
         time.sleep(10)
         continue</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text>printProgressBar(num_done, num_pages*20, prefix='Progress:', suffix='Complete', length=50)
             num_done += 1</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgam9iX2xvY2F0aW9ucy5hcHBlbmQoIiIpCg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgIyBBZGQgYW4gZW1wdHkgZWxlbWVudCBpZiBzb21ldGhpbmcgd2VudCB3cm9uZyAtIHdlIGNhbiBkZWFsIHdpdGggaXQgbGF0ZXIK</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICBlbHNlOgo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgICAgICBpZiBsb2NhdGlvbiBpcyBub3QgTm9uZToK</text>
-      </register>
-      <register name="8" type="4">
-        <text>lse:
-            # Add an empty element so we know something went wrong - we can deal with it later
-            job_descriptions.append(&quot;&quot;)</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiMgSW5bMTI0XTo=</text>
       </register>
     </registers>
     <search>
