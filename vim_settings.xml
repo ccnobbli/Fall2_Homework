@@ -32,11 +32,11 @@
         <mark key="^" line="30" column="32" />
         <mark key="." line="7" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539782662886">
+      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539784392679">
         <mark key="'" line="112" column="16" />
-        <mark key="[" line="144" column="0" />
-        <mark key="]" line="144" column="0" />
-        <mark key="." line="144" column="0" />
+        <mark key="[" line="35" column="7" />
+        <mark key="]" line="35" column="7" />
+        <mark key="." line="35" column="7" />
       </file>
       <file name="$USER_HOME$/Documents/great_expectations_las/docs/source/glossary.rst" timestamp="1530302515301">
         <mark key="[" line="77" column="0" />
@@ -91,10 +91,10 @@
     <jumps />
     <registers>
       <register name="&quot;" type="4">
-        <text># Save to a file</text>
+        <text>Data Scientis</text>
       </register>
       <register name="-" type="4">
-        <text># Save to a file</text>
+        <text>Data Scientis</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxqb2JfZGVzY3JpcHRpb25zXD4=</text>
