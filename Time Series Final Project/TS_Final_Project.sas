@@ -82,6 +82,20 @@ identify var=residual stationarity=(adf=2);
 run;
 quit;  * residuals are stationary;
 
+/* Visualize rain vs well height to see the affect of rain to determine number of lags, using just a few days */
+
+data RainWell;
+	set All_NoNA;
+	if _n_ > 9373 and _n_ < 9393;
+run;
+
+proc sgplot data=RainWell;
+	series x=DateHour1 y=WellLevel;
+	series x=DateHour1 y=RainLevel;
+run;
+quit; *picked 16 lags;
+
+
 
 /******************************BEGIN MODELING****************************************/
 
@@ -91,6 +105,19 @@ set All_NoNA;
 	Rain1=lag1(RainLevel);
 	Rain2=lag2(RainLevel);
 	Rain3=lag3(RainLevel);
+	Rain4=lag4(RainLevel);
+	Rain5=lag5(RainLevel);
+	Rain6=lag6(RainLevel);
+	Rain7=lag7(RainLevel);
+	Rain8=lag8(RainLevel);
+	Rain9=lag9(RainLevel);
+	Rain10=lag10(RainLevel);
+	Rain11=lag11(RainLevel);
+	Rain12=lag12(RainLevel);
+	Rain13=lag13(RainLevel);
+	Rain14=lag14(RainLevel);
+	Rain15=lag15(RainLevel);
+	Rain16=lag16(RainLevel);
 	Tide1=lag1(TideLevel);
 	Tide2=lag2(TideLevel);
 	Tide3=lag3(TideLevel);
@@ -99,7 +126,6 @@ set All_NoNA;
 	Well1=lag1(WellLevel);
 	Well2=lag2(WellLevel);
 	Welld = WellLevel - lag1(WellLevel);
-	*Include more lags of rain, plot two days worth to see how many lags;
 run;
 /*Subset data. Last week is the test set */
 data train;
@@ -114,8 +140,8 @@ run;
 
 /* First need to check residuals are stationary in mean and variance  */
 proc arima data=train;
-identify var= WellLevel crosscorr=(RainLevel Rain1 Rain2 Rain3 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5);
-estimate p=2 input=(RainLevel Rain1 Rain2 Rain3 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5);
+identify var= WellLevel crosscorr=(RainLevel Rain1 Rain2 Rain3 Rain4 Rain5 Rain6 Rain7 Rain8 Rain9 Rain10 Rain11 Rain12 Rain13 Rain14 Rain15 Rain16 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5);
+estimate p=2 input=(RainLevel Rain1 Rain2 Rain3 Rain4 Rain5 Rain6 Rain7 Rain8 Rain9 Rain10 Rain11 Rain12 Rain13 Rain14 Rain15 Rain16 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5);
 forecast out=resid1;
 run;
 quit;
@@ -128,9 +154,9 @@ quit;
 *We have stationairity;
 
 proc glmselect data=train;
-model WellLevel=Welld RainLevel Rain1 Rain2 Rain3 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5/selection=stepwise select=AICC;
+model WellLevel=RainLevel Rain1 Rain2 Rain3 Rain4 Rain5 Rain6 Rain7 Rain8 Rain9 Rain10 Rain11 Rain12 Rain13 Rain14 Rain15 Rain16 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5/selection=stepwise select=AICC;
 run;
-quit; *R-Squared = 1, probably have an issue with collinearity;
+quit;
 
 /*proc glmselect hinted at these lags*/
 proc arima data=train;
