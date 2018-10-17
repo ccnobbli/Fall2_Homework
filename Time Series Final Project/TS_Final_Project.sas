@@ -98,6 +98,8 @@ set All_NoNA;
 	Tide5=lag5(TideLevel);
 	Well1=lag1(WellLevel);
 	Well2=lag2(WellLevel);
+	Welld = WellLevel - lag1(WellLevel);
+	*Include more lags of rain, plot two days worth to see how many lags;
 run;
 /*Subset data. Last week is the test set */
 data train;
@@ -126,7 +128,7 @@ quit;
 *We have stationairity;
 
 proc glmselect data=train;
-model WellLevel=Well1 Well2 RainLevel Rain1 Rain2 Rain3 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5/selection=stepwise select=AICC;
+model WellLevel=Welld RainLevel Rain1 Rain2 Rain3 TideLevel Tide1 Tide2 Tide3 Tide4 Tide5/selection=stepwise select=AICC;
 run;
 quit; *R-Squared = 1, probably have an issue with collinearity;
 
