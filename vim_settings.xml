@@ -32,11 +32,12 @@
         <mark key="^" line="30" column="32" />
         <mark key="." line="7" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539735738612">
-        <mark key="[" line="68" column="0" />
-        <mark key="]" line="68" column="0" />
-        <mark key="^" line="44" column="3" />
-        <mark key="." line="68" column="0" />
+      <file name="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" timestamp="1539740099301">
+        <mark key="'" line="87" column="16" />
+        <mark key="[" line="83" column="54" />
+        <mark key="]" line="84" column="16" />
+        <mark key="." line="84" column="16" />
+        <mark key="^" line="83" column="15" />
       </file>
       <file name="$USER_HOME$/Documents/great_expectations_las/docs/source/glossary.rst" timestamp="1530302515301">
         <mark key="[" line="77" column="0" />
@@ -98,59 +99,66 @@
       <jump line="37" column="56" filename="$USER_HOME$/PycharmProjects/craigslist-fix/src/craigslist_fix.py" />
       <jump line="706" column="59" filename="$USER_HOME$/Documents/great_expectations_las/great_expectations/dataset/sqlalchemy_dataset.py" />
       <jump line="62" column="25" filename="$USER_HOME$/PycharmProjects/untitled/darkskyrequest.py" />
+      <jump line="91" column="29" filename="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" />
+      <jump line="85" column="16" filename="$USER_HOME$/Documents/IAA/TimeSeries/HW4/indeed_scraper.py" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiMgSW5bMTI0XTo=</text>
+        <text>printProgressBar(num_done, num_pages*20, prefix='Progress:', suffix='Complete', length=50)
+            num_done += 1</text>
       </register>
       <register name="-" type="4">
-        <text>Grab the html code from the individual</text>
+        <text />
       </register>
       <register name="/" type="4">
-        <text>\\</text>
+        <text encoding="base64">XDxqb2JfZGVzY3JpcHRpb25zXD4=</text>
       </register>
       <register name="0" type="4">
         <text encoding="base64">Zm9yIHBvc3QgaW4gcG9zdHM6CiAgICBwcmludChtYXRjaF90b2tlbl9pbl90aXRsZV9saXN0KHBvc3RbJ3RpdGxlJ10sIGtleXdvcmRzKSkK</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CiMgSW5bMTI0XTo=</text>
+        <text>printProgressBar(num_done, num_pages*20, prefix='Progress:', suffix='Complete', length=50)
+            num_done += 1</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuMDUpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgam9iX2xvY2F0aW9ucy5hcHBlbmQoIiIpCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAjIEV4dHJhY3QgdGhlIGpvYiBkZXNjcmlwdGlvbiBmb3IgZWFjaCB0dXJuc3RpbGVMaW5rIG9uIHRoaXMgcGFnZSBvZiBzZWFyY2ggcmVzdWx0cyAK</text>
+        <text encoding="base64">ICAgICAgICAgICAgIyBBZGQgYW4gZW1wdHkgZWxlbWVudCBpZiBzb21ldGhpbmcgd2VudCB3cm9uZyAtIHdlIGNhbiBkZWFsIHdpdGggaXQgbGF0ZXIK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAjIEV4dHJhY3QgdGhlIGpvYiBkZXNjcmlwdGlvbiBmb3IgZWFjaCB0dXJuc3RpbGVMaW5rIG9uIHRoaXMgcGFnZSBvZiBzZWFyY2ggcmVzdWx0cyAK</text>
+        <text encoding="base64">ICAgICAgICBlbHNlOgo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICMgVGhlcmUgYXJlIHR3byB0eXBlcyBvZiBsaW5rcywgVHVybnN0aWxlTGlua3MgYW5kICJzamEjIiBsaW5rcwo=</text>
+        <text encoding="base64">ICAgICAgICBpZiBsb2NhdGlvbiBpcyBub3QgTm9uZToK</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="6" type="4">
+        <text>lse:
+            # Add an empty element so we know something went wrong - we can deal with it later
+            job_descriptions.append(&quot;&quot;)</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">IyAjIFZlcnNpb24gMy4wIC0tIEpvYiBEZXNjcmlwdGlvbnMgYW5kIGxvY2F0aW9ucyBmcm9tIG11bHRpcGxlIHNlYXJjaCBwYWdlcywgZHVwbGljYXRpb25zIHJlbW92ZWQK</text>
+      <register name="7" type="4">
+        <text encoding="base64">CiMgSW5bMTI0XTo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuMDUpCg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAjIEV4dHJhY3QgdGhlIGpvYiBkZXNjcmlwdGlvbiBmb3IgZWFjaCB0dXJuc3RpbGVMaW5rIG9uIHRoaXMgcGFnZSBvZiBzZWFyY2ggcmVzdWx0cyAK</text>
       </register>
     </registers>
     <search>
-      <last-search>\\</last-search>
+      <last-search encoding="base64">XDxqb2JfZGVzY3JpcHRpb25zXD4=</last-search>
       <last-offset />
-      <last-pattern>\\</last-pattern>
-      <last-dir>1</last-dir>
+      <last-pattern encoding="base64">XDxqb2JfZGVzY3JpcHRpb25zXD4=</last-pattern>
+      <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>
     <history>
       <history-search>
         <entry>&quot;</entry>
         <entry>\\</entry>
+        <entry encoding="base64">XDxqb2JfZGVzY3JpcHRpb25zXD4=</entry>
       </history-search>
       <history-cmd />
       <history-expr />
