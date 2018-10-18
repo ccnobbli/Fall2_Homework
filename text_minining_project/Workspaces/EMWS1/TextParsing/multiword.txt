@@ -1,0 +1,1155 @@
+﻿LA :3:Prep
+La :3:Prep
+la :3:Prep
+A BIT :3:Adv
+A Bit :3:Adv
+A FORTIORI :3:Adv
+A Fortiori :3:Adv
+A LOT :3:Adv
+A LOT OF :3:Adj
+A Lot :3:Adv
+A Lot Of :3:Adj
+A POSTERIORI :3:Adj
+A PRIORI :3:Adj
+A Posteriori :3:Adj
+A Priori :3:Adj
+ACCORDING TO :3:Prep
+AD HOC :3:Adj
+AD INTERIM :3:Adv
+AHEAD OF :3:Prep
+ALL THE TIME :3:Adv
+ALONG WITH :3:Prep
+ANY MOMENT :3:Adv
+ANY SECOND :3:Adv
+APART FROM :3:Prep
+AS A RESULT OF :3:Prep
+AS A RULE :3:Adv
+AS FAR AS :3:Prep
+AS FOR :3:Prep
+AS IF :3:Conj
+AS IN :3:Prep
+AS LONG AS :3:Conj
+AS MANY AS :3:Adv
+AS OF :3:Prep
+AS ONE :3:Adv
+AS PER :3:Prep
+AS REGARDS :3:Prep
+AS SOON AS :3:Conj
+AS THOUGH :3:Conj
+AS TO :3:Prep
+AS WELL :3:Adv
+AS WELL AS :3:Conj
+AS YET :3:Adv
+ASIDE FROM :3:Prep
+ASSUMING THAT :3:Conj
+AT ALL :3:Adv
+AT ANY RATE :3:Adv
+AT LEAST ONE :3:Adj
+AT ONCE :3:Adv
+AT THE EXPENSE OF :3:Prep
+AT VARIANCE WITH :3:Prep
+AWAY FROM :3:Prep
+According To :3:Prep
+Ad Hoc :3:Adj
+Ad Interim :3:Adv
+Ahead Of :3:Prep
+All The Time :3:Adv
+Along With :3:Prep
+Any Moment :3:Adv
+Any Second :3:Adv
+Apart From :3:Prep
+As A Result Of :3:Prep
+As A Rule :3:Adv
+As Far As :3:Prep
+As For :3:Prep
+As If :3:Conj
+As In :3:Prep
+As Long As :3:Conj
+As Many As :3:Adv
+As Of :3:Prep
+As One :3:Adv
+As Per :3:Prep
+As Regards :3:Prep
+As Soon As :3:Conj
+As Though :3:Conj
+As To :3:Prep
+As Well :3:Adv
+As Well As :3:Conj
+As Yet :3:Adv
+Aside From :3:Prep
+Assuming That :3:Conj
+At All :3:Adv
+At Any Rate :3:Adv
+At Least One :3:Adj
+At Once :3:Adv
+At The Expense Of :3:Prep
+At Variance With :3:Prep
+Away From :3:Prep
+BACK OF :3:Prep
+BEAR UP :3:Verb
+BECAUSE OF :3:Prep
+BEST KNOWN :3:Adj
+BLACK AND WHITE :3:Adj
+BONA FIDE :3:Adj
+BREAK UP :3:Verb
+BRING ABOUT :3:Verb
+BRING UP :3:Verb
+BUILD UP :3:Verb
+BUT FOR :3:Prep
+BY DINT OF :3:Prep
+BY ITSELF :3:Adv
+BY MEANS OF :3:Prep
+BY PROXY :3:Adv
+BY REASON OF :3:Prep
+BY THE WAY :3:Adv
+BY VIRTUE OF :3:Prep
+BY WAY OF :3:Prep
+Back Of :3:Prep
+Bear Up :3:Verb
+Because Of :3:Prep
+Best Known :3:Adj
+Black And White :3:Adj
+Bona Fide :3:Adj
+Break Up :3:Verb
+Bring About :3:Verb
+Bring Up :3:Verb
+Build Up :3:Verb
+But For :3:Prep
+By Dint Of :3:Prep
+By Itself :3:Adv
+By Means Of :3:Prep
+By Proxy :3:Adv
+By Reason Of :3:Prep
+By The Way :3:Adv
+By Virtue Of :3:Prep
+By Way Of :3:Prep
+CARRY ON :3:Verb
+CARRY OUT :3:Verb
+CARRY THROUGH :3:Verb
+CATCH ON :3:Verb
+CENTRAL AFRICAN :3:Adj
+CLEAN UP :3:Verb
+CLEAR UP :3:Verb
+CLOSE BY :3:Adv
+CLOSE TO :3:Adv
+COME ABOUT :3:Verb
+COME IN :3:Verb
+COME ON :3:Verb
+CONSIDERING THAT :3:Conj
+COSTA RICAN :3:Adj
+COVER UP :3:Verb
+CUT OFF :3:Verb
+Carry On :3:Verb
+Carry Out :3:Verb
+Carry Through :3:Verb
+Catch On :3:Verb
+Central African :3:Adj
+Clean Up :3:Verb
+Clear Up :3:Verb
+Close By :3:Adv
+Close To :3:Adv
+Come About :3:Verb
+Come In :3:Verb
+Come On :3:Verb
+Considering That :3:Conj
+Costa Rican :3:Adj
+Cover Up :3:Verb
+Cut Off :3:Verb
+DARE TO :3:Aux
+DARK BLUE :3:Adj
+DE FACTO :3:Adv
+DE JURE :3:Adv
+DEVOID OF :3:Prep
+DRAW DOWN :3:Verb
+DUE TO :3:Prep
+Dare To :3:Aux
+Dark Blue :3:Adj
+De Facto :3:Adv
+De Jure :3:Adv
+Devoid Of :3:Prep
+Draw Down :3:Verb
+Due To :3:Prep
+EAST GERMAN :3:Adj
+EDGE IN :3:Verb
+EGG ON :3:Verb
+EN BLOC :3:Adv
+EN MASSE :3:Adv
+EN ROUTE :3:Adv
+ET AL. :3:Abbr
+ET CETERA :3:Adv
+EVEN IF :3:Conj
+EVEN THOUGH :3:Conj
+EVER EXPANDING :3:Adj
+EX OFFICIO :3:Adv
+EX PARTE :3:Adj
+EXCEPT FOR :3:Prep
+EXCLUSIVE OF :3:Prep
+East German :3:Adj
+Edge In :3:Verb
+Egg On :3:Verb
+En Bloc :3:Adv
+En Masse :3:Adv
+En Route :3:Adv
+Et Al. :3:Abbr
+Et Cetera :3:Adv
+Even If :3:Conj
+Even Though :3:Conj
+Ever Expanding :3:Adj
+Ex Officio :3:Adv
+Ex Parte :3:Adj
+Except For :3:Prep
+Exclusive Of :3:Prep
+FALL AWAY :3:Verb
+FALL BACK :3:Verb
+FILL IN :3:Verb
+FILLED UP :3:Adj
+FIND OUT :3:Verb
+FINE TUNE :3:Verb
+FIT IN :3:Verb
+FOR ALL THAT :3:Conj
+FOR SAKE OF :3:Prep
+FOR THE SAKE OF :3:Prep
+FOR WANT OF :3:Prep
+Fall Away :3:Verb
+Fall Back :3:Verb
+Fill In :3:Verb
+Filled Up :3:Adj
+Find Out :3:Verb
+Fine Tune :3:Verb
+Fit In :3:Verb
+For All That :3:Conj
+For Sake Of :3:Prep
+For The Sake Of :3:Prep
+For Want Of :3:Prep
+GIVE AWAY :3:Verb
+GIVE IN :3:Verb
+GIVE UP :3:Verb
+GIVEN THAT :3:Conj
+GO AHEAD :3:Verb
+GRANTING THAT :3:Conj
+GREAT DEAL :3:Adv
+GROW UP :3:Verb
+Give Away :3:Verb
+Give In :3:Verb
+Give Up :3:Verb
+Given That :3:Conj
+Go Ahead :3:Verb
+Granting That :3:Conj
+Great Deal :3:Adv
+Grow Up :3:Verb
+HAND OUT :3:Verb
+HAND OVER :3:Verb
+HIGH INCOME :3:Adj
+HIGH QUALITY :3:Adj
+HOLD BACK :3:Verb
+HOLD UP :3:Verb
+HOPED FOR :3:Adj
+HOW MANY :3:Pron
+HOW MUCH :3:Pron
+Hand Out :3:Verb
+Hand Over :3:Verb
+High Income :3:Adj
+High Quality :3:Adj
+Hold Back :3:Verb
+Hold Up :3:Verb
+Hoped For :3:Adj
+How Many :3:Pron
+How Much :3:Pron
+IN ABSENTIA :3:Adv
+IN ACCORDANCE WITH :3:Prep
+IN ADDITION :3:Adv
+IN ADDITION TO :3:Prep
+IN AID OF :3:Prep
+IN CASE :3:Conj
+IN CASE OF :3:Prep
+IN CHARGE OF :3:Prep
+IN COMMON WITH :3:Prep
+IN COMPARISON WITH :3:Prep
+IN COMPLIANCE WITH :3:Prep
+IN CONFORMITY WITH :3:Prep
+IN CONSEQUENCE OF :3:Prep
+IN CONTACT WITH :3:Prep
+IN EXCHANGE FOR :3:Prep
+IN FAVOUR OF :3:Prep
+IN FRONT :3:Adv
+IN FRONT OF :3:Prep
+IN GENERAL :3:Adv
+IN HEAT :3:Adv
+IN LIEU OF :3:Prep
+IN LIGHT OF :3:Prep
+IN LINE WITH :3:Prep
+IN NEED OF :3:Prep
+IN ORDER FOR :3:Conj
+IN ORDER THAT :3:Conj
+IN PARTICULAR :3:Adv
+IN PLACE OF :3:Prep
+IN POSITION :3:Adv
+IN PROCESS OF :3:Prep
+IN PURSUIT :3:Adv
+IN RE :3:Prep
+IN REFERENCE TO :3:Prep
+IN REGARD TO :3:Prep
+IN RELATION TO :3:Prep
+IN RESPECT OF :3:Prep
+IN RESPECT TO :3:Prep
+IN RETURN OF :3:Prep
+IN SEARCH OF :3:Prep
+IN SITU :3:Adv
+IN SPITE OF :3:Prep
+IN THAT :3:Conj
+IN THE EVENT THAT :3:Conj
+IN THE FACE OF :3:Prep
+IN THE INTERIM :3:Adv
+IN THE INTERVAL :3:Adv
+IN THE LIGHT OF :3:Prep
+IN THE PROCESS OF :3:Prep
+IN THE RAW :3:Adv
+IN USE :3:Adv
+IN VACUO :3:Adv
+IN VIEW OF :3:Prep
+IN VITRO :3:Adj
+INASMUCH AS :3:Conj
+INSIDE OF :3:Prep
+INSOFAR AS :3:Conj
+INSOFAR THAT :3:Conj
+INSTEAD OF :3:Prep
+INTER ALIA :3:Adv
+IPSO FACTO :3:Adv
+IRRESPECTIVE OF :3:Prep
+In Absentia :3:Adv
+In Accordance With :3:Prep
+In Addition :3:Adv
+In Addition To :3:Prep
+In Aid Of :3:Prep
+In Case :3:Conj
+In Case Of :3:Prep
+In Charge Of :3:Prep
+In Common With :3:Prep
+In Comparison With :3:Prep
+In Compliance With :3:Prep
+In Conformity With :3:Prep
+In Consequence Of :3:Prep
+In Contact With :3:Prep
+In Exchange For :3:Prep
+In Favour Of :3:Prep
+In Front :3:Adv
+In Front Of :3:Prep
+In General :3:Adv
+In Heat :3:Adv
+In Lieu Of :3:Prep
+In Light Of :3:Prep
+In Line With :3:Prep
+In Need Of :3:Prep
+In Order For :3:Conj
+In Order That :3:Conj
+In Particular :3:Adv
+In Place Of :3:Prep
+In Position :3:Adv
+In Process Of :3:Prep
+In Pursuit :3:Adv
+In Re :3:Prep
+In Reference To :3:Prep
+In Regard To :3:Prep
+In Relation To :3:Prep
+In Respect Of :3:Prep
+In Respect To :3:Prep
+In Return Of :3:Prep
+In Search Of :3:Prep
+In Situ :3:Adv
+In Spite Of :3:Prep
+In That :3:Conj
+In The Event That :3:Conj
+In The Face Of :3:Prep
+In The Interim :3:Adv
+In The Interval :3:Adv
+In The Light Of :3:Prep
+In The Process Of :3:Prep
+In The Raw :3:Adv
+In Use :3:Adv
+In Vacuo :3:Adv
+In View Of :3:Prep
+In Vitro :3:Adj
+Inasmuch As :3:Conj
+Inside Of :3:Prep
+Insofar As :3:Conj
+Insofar That :3:Conj
+Instead Of :3:Prep
+Inter Alia :3:Adv
+Ipso Facto :3:Adv
+Irrespective Of :3:Prep
+JUST ABOUT :3:Adv
+Just About :3:Adv
+KEEP IN MIND :3:Verb
+KEEP OUT :3:Verb
+KEEP UP :3:Verb
+KICK OFF :3:Verb
+Keep In Mind :3:Verb
+Keep Out :3:Verb
+Keep Up :3:Verb
+Kick Off :3:Verb
+LAID BACK :3:Adj
+LARGE SCALE :3:Adj
+LATIN AMERICAN :3:Adj
+LAY OUT :3:Verb
+LEAD ON :3:Verb
+LEAD TO :3:Verb
+LEAVE OUT :3:Verb
+LIGHT UP :3:Verb
+LINE UP :3:Verb
+LOCK UP :3:Verb
+LONG TIME :3:Adj
+LOOK FORWARD TO :3:Verb
+LOOK OUT :3:Verb
+LOW INCOME :3:Adj
+LOW LEVEL :3:Adj
+LOWER THAN :3:Prep
+Laid Back :3:Adj
+Large Scale :3:Adj
+Latin American :3:Adj
+Lay Out :3:Verb
+Lead On :3:Verb
+Lead To :3:Verb
+Leave Out :3:Verb
+Light Up :3:Verb
+Line Up :3:Verb
+Lock Up :3:Verb
+Long Time :3:Adj
+Look Forward To :3:Verb
+Look Out :3:Verb
+Low Income :3:Adj
+Low Level :3:Adj
+Lower Than :3:Prep
+MAKE OUT :3:Verb
+MAKE UP :3:Verb
+MARKET DRIVEN :3:Adj
+MENTALLY ILL :3:Adj
+MIX UP :3:Verb
+MIXED UP :3:Adj
+MORE OR LESS :3:Adv
+MOST OFTEN :3:Adj
+MOST REMOTE :3:Adj
+MOVE ALONG :3:Verb
+MUST DO :3:Adj
+Make Out :3:Verb
+Make Up :3:Verb
+Market Driven :3:Adj
+Mentally Ill :3:Adj
+Mix Up :3:Verb
+Mixed Up :3:Adj
+More Or Less :3:Adv
+Most Often :3:Adj
+Most Remote :3:Adj
+Move Along :3:Verb
+Must Do :3:Adj
+NEAR TO :3:Prep
+NEED TO :3:Aux
+NEEDS TO :3:Aux
+NETHERLANDS ANTILLEAN :3:Adj
+NEXT DAY :3:Adj
+NEXT TO :3:Prep
+NO ONE :3:Pron
+NORTH AMERICAN :3:Adj
+NORTH KOREAN :3:Adj
+NORTHERN IRISH :3:Adj
+NOT AS GOOD :3:Adj
+NOT FOR PROFIT :3:Adj
+NOT MANY :3:Adj
+NOT QUITE :3:Adv
+NOW AND THEN :3:Adv
+NOW THAT :3:Conj
+NULL AND VOID :3:Adj
+NUMBER ONE :3:Adj
+Near To :3:Prep
+Need To :3:Aux
+Needs To :3:Aux
+Netherlands Antillean :3:Adj
+Next Day :3:Adj
+Next To :3:Prep
+No One :3:Pron
+North American :3:Adj
+North Korean :3:Adj
+Northern Irish :3:Adj
+Not As Good :3:Adj
+Not For Profit :3:Adj
+Not Many :3:Adj
+Not Quite :3:Adv
+Now And Then :3:Adv
+Now That :3:Conj
+Null And Void :3:Adj
+Number One :3:Adj
+OF LATE :3:Adj
+OFF OF :3:Prep
+OFF THE SHELF :3:Adj
+OLD FASHIONED :3:Adj
+ON ACCOUNT OF :3:Prep
+ON ALL SIDES :3:Adv
+ON BEHALF OF :3:Prep
+ON GROUNDS OF :3:Prep
+ON HOLD :3:Adv
+ON PAIN OF :3:Prep
+ON THE GROUNDS OF :3:Prep
+ON THE MATTER OF :3:Prep
+ON THE PART OF :3:Prep
+ON THE STRENGTH OF :3:Prep
+ON TIME :3:Adv
+ON TO :3:Prep
+ON TOP OF :3:Prep
+ONCE MORE :3:Adv
+ONE MORE :3:Adv
+OP CIT. :3:Abbr
+OUGHT TO :3:Aux
+OUT OF :3:Prep
+OUT OF CONTROL :3:Adj
+OUT OF WORK :3:Adj
+OUTSIDE OF :3:Prep
+OWING TO :3:Prep
+Of Late :3:Adj
+Off Of :3:Prep
+Off The Shelf :3:Adj
+Old Fashioned :3:Adj
+On Account Of :3:Prep
+On All Sides :3:Adv
+On Behalf Of :3:Prep
+On Grounds Of :3:Prep
+On Hold :3:Adv
+On Pain Of :3:Prep
+On The Grounds Of :3:Prep
+On The Matter Of :3:Prep
+On The Part Of :3:Prep
+On The Strength Of :3:Prep
+On Time :3:Adv
+On To :3:Prep
+On Top Of :3:Prep
+Once More :3:Adv
+One More :3:Adv
+Op Cit. :3:Abbr
+Ought To :3:Aux
+Out Of :3:Prep
+Out Of Control :3:Adj
+Out Of Work :3:Adj
+Outside Of :3:Prep
+Owing To :3:Prep
+PAPER BASED :3:Adj
+PAR EXCELLENCE :3:Adv
+PARI PASSU :3:Adj
+PAY UP :3:Verb
+PER ANNUM :3:Adv
+PER CAPITA :3:Adj
+PER DIEM :3:Adj
+PER SE :3:Adv
+PICK UP :3:Verb
+PLAY DOWN :3:Verb
+POINT OUT :3:Verb
+PRELIMINARY TO :3:Prep
+PREPARATORY TO :3:Prep
+PREVIOUS TO :3:Prep
+PRIMA FACIE :3:Adj
+PRIOR TO :3:Prep
+PRO FORMA :3:Adj
+PRO RATA :3:Adv
+PROVIDED THAT :3:Conj
+PROVIDING THAT :3:Conj
+PURSUANT TO :3:Prep
+PUT BY :3:Verb
+PUT DOWN :3:Verb
+PUT FORTH :3:Verb
+PUT OFF :3:Verb
+PUT ON :3:Verb
+PUT OUT :3:Verb
+PUT UP :3:Verb
+Paper Based :3:Adj
+Par Excellence :3:Adv
+Pari Passu :3:Adj
+Pay Up :3:Verb
+Per Annum :3:Adv
+Per Capita :3:Adj
+Per Diem :3:Adj
+Per Se :3:Adv
+Pick Up :3:Verb
+Play Down :3:Verb
+Point Out :3:Verb
+Preliminary To :3:Prep
+Preparatory To :3:Prep
+Previous To :3:Prep
+Prima Facie :3:Adj
+Prior To :3:Prep
+Pro Forma :3:Adj
+Pro Rata :3:Adv
+Provided That :3:Conj
+Providing That :3:Conj
+Pursuant To :3:Prep
+Put By :3:Verb
+Put Down :3:Verb
+Put Forth :3:Verb
+Put Off :3:Verb
+Put On :3:Verb
+Put Out :3:Verb
+Put Up :3:Verb
+REGARDLESS OF :3:Prep
+RELATIVE TO :3:Prep
+ROUND UP :3:Verb
+Regardless Of :3:Prep
+Relative To :3:Prep
+Round Up :3:Verb
+SAS INSTITUTE :3:Noun
+SAUDI ARABIAN :3:Adj
+SAVE THAT :3:Conj
+SECOND CLASS :3:Adj
+SECOND LEVEL :3:Adj
+SEEING THAT :3:Conj
+SET AT :3:Verb
+SET BACK :3:Verb
+SET OFF :3:Verb
+SET ON :3:Verb
+SET OUT :3:Verb
+SET UP :3:Verb
+SHOW UP :3:Verb
+SIDE BY SIDE :3:Adv
+SIGN UP :3:Verb
+SINE DIE :3:Adv
+SINGLE OUT :3:Verb
+SO AS :3:Conj
+SO LONG :3:Interj
+SO THAT :3:Conj
+SOAK UP :3:Verb
+SOUGHT AFTER :3:Adj
+SOUTH AFRICAN :3:Adj
+SOUTH AMERICAN :3:Adj
+SOUTH KOREAN :3:Adj
+SOUTHEAST ASIAN :3:Adj
+SPELL OUT :3:Verb
+SRI LANKAN :3:Adj
+STAMP OUT :3:Verb
+STAND OUT :3:Verb
+STAND UP :3:Verb
+STEMMING FROM :3:Prep
+STEP UP :3:Verb
+SUB JUDICE :3:Adv
+SUBSEQUENT TO :3:Prep
+SUCH AS :3:Prep
+SUCH THAT :3:Conj
+SUI GENERIS :3:Adj
+Sas Institute :3:Noun
+Saudi Arabian :3:Adj
+Save That :3:Conj
+Second Class :3:Adj
+Second Level :3:Adj
+Seeing That :3:Conj
+Set At :3:Verb
+Set Back :3:Verb
+Set Off :3:Verb
+Set On :3:Verb
+Set Out :3:Verb
+Set Up :3:Verb
+Show Up :3:Verb
+Side By Side :3:Adv
+Sign Up :3:Verb
+Sine Die :3:Adv
+Single Out :3:Verb
+So As :3:Conj
+So Long :3:Interj
+So That :3:Conj
+Soak Up :3:Verb
+Sought After :3:Adj
+South African :3:Adj
+South American :3:Adj
+South Korean :3:Adj
+Southeast Asian :3:Adj
+Spell Out :3:Verb
+Sri Lankan :3:Adj
+Stamp Out :3:Verb
+Stand Out :3:Verb
+Stand Up :3:Verb
+Stemming From :3:Prep
+Step Up :3:Verb
+Sub Judice :3:Adv
+Subsequent To :3:Prep
+Such As :3:Prep
+Such That :3:Conj
+Sui Generis :3:Adj
+TAKE ADVANTAGE :3:Verb
+TAKE AWAY :3:Verb
+TAKE IN :3:Verb
+TAKE OFF :3:Verb
+TAKE ON :3:Verb
+TAKE OUT :3:Verb
+TAKE OVER :3:Verb
+TAKE PLACE :3:Verb
+TAKE UP :3:Verb
+THANK YOU :3:Interj
+THANKS TO :3:Prep
+THIRD DEGREE :3:Adj
+THIRD PARTY :3:Adj
+TIE UP :3:Verb
+TIP OVER :3:Verb
+TO A DEGREE :3:Adv
+TO THE POINT :3:Adj
+TOGETHER WITH :3:Prep
+TOO SOON :3:Adv
+TURN DOWN :3:Verb
+TURN IN :3:Verb
+TURN ON :3:Verb
+TURN OUT :3:Verb
+TURN OVER :3:Verb
+TURNED ON :3:Adj
+Take Advantage :3:Verb
+Take Away :3:Verb
+Take In :3:Verb
+Take Off :3:Verb
+Take On :3:Verb
+Take Out :3:Verb
+Take Over :3:Verb
+Take Place :3:Verb
+Take Up :3:Verb
+Thank You :3:Interj
+Thanks To :3:Prep
+Third Degree :3:Adj
+Third Party :3:Adj
+Tie Up :3:Verb
+Tip Over :3:Verb
+To A Degree :3:Adv
+To The Point :3:Adj
+Together With :3:Prep
+Too Soon :3:Adv
+Turn Down :3:Verb
+Turn In :3:Verb
+Turn On :3:Verb
+Turn Out :3:Verb
+Turn Over :3:Verb
+Turned On :3:Adj
+ULTRA VIRES :3:Adv
+UNDER WAY :3:Adv
+UP AGAINST :3:Prep
+UP TO :3:Prep
+UPSIDE DOWN :3:Adv
+UPWARDS OF :3:Prep
+USE UP :3:Verb
+USED TO :3:Aux
+Ultra Vires :3:Adv
+Under Way :3:Adv
+Up Against :3:Prep
+Up To :3:Prep
+Upside Down :3:Adv
+Upwards Of :3:Prep
+Use Up :3:Verb
+Used To :3:Aux
+VICE VERSA :3:Adv
+Vice Versa :3:Adv
+WARD OFF :3:Verb
+WARM BLOODED :3:Adj
+WASTE AWAY :3:Verb
+WEAR OUT :3:Verb
+WELL KNOWN :3:Adj
+WIND UP :3:Verb
+WIPE OUT :3:Verb
+WITH REFERENCE TO :3:Prep
+WITH REGARD TO :3:Prep
+WITH RESPECT TO :3:Prep
+WITH THE EXCEPTION OF :3:Prep
+WITHIN REACH :3:Adj
+WITHOUT DOUBT :3:Adj
+WORK OUT :3:Verb
+WRAPPED UP :3:Adj
+WRITE DOWN :3:Verb
+Ward Off :3:Verb
+Warm Blooded :3:Adj
+Waste Away :3:Verb
+Wear Out :3:Verb
+Well Known :3:Adj
+Wind Up :3:Verb
+Wipe Out :3:Verb
+With Reference To :3:Prep
+With Regard To :3:Prep
+With Respect To :3:Prep
+With The Exception Of :3:Prep
+Within Reach :3:Adj
+Without Doubt :3:Adj
+Work Out :3:Verb
+Wrapped Up :3:Adj
+Write Down :3:Verb
+ZERO IN :3:Verb
+Zero In :3:Verb
+a bit :3:Adv
+a fortiori :3:Adv
+a lot :3:Adv
+a lot of :3:Adj
+a posteriori :3:Adj
+a priori :3:Adj
+according to :3:Prep
+ad hoc :3:Adj
+ad interim :3:Adv
+ahead of :3:Prep
+all the time :3:Adv
+along with :3:Prep
+any moment :3:Adv
+any second :3:Adv
+apart from :3:Prep
+as a result of :3:Prep
+as a rule :3:Adv
+as far as :3:Prep
+as for :3:Prep
+as if :3:Conj
+as in :3:Prep
+as long as :3:Conj
+as many as :3:Adv
+as of :3:Prep
+as one :3:Adv
+as per :3:Prep
+as regards :3:Prep
+as soon as :3:Conj
+as though :3:Conj
+as to :3:Prep
+as well :3:Adv
+as well as :3:Conj
+as yet :3:Adv
+aside from :3:Prep
+assuming that :3:Conj
+at all :3:Adv
+at any rate :3:Adv
+at least one :3:Adj
+at once :3:Adv
+at the expense of :3:Prep
+at variance with :3:Prep
+away from :3:Prep
+back of :3:Prep
+bear up :3:Verb
+because of :3:Prep
+best known :3:Adj
+black and white :3:Adj
+bona fide :3:Adj
+break up :3:Verb
+bring about :3:Verb
+bring up :3:Verb
+build up :3:Verb
+but for :3:Prep
+by dint of :3:Prep
+by itself :3:Adv
+by means of :3:Prep
+by proxy :3:Adv
+by reason of :3:Prep
+by the way :3:Adv
+by virtue of :3:Prep
+by way of :3:Prep
+carry on :3:Verb
+carry out :3:Verb
+carry through :3:Verb
+catch on :3:Verb
+central african :3:Adj
+clean up :3:Verb
+clear up :3:Verb
+close by :3:Adv
+close to :3:Adv
+come about :3:Verb
+come in :3:Verb
+come on :3:Verb
+considering that :3:Conj
+costa rican :3:Adj
+cover up :3:Verb
+cut off :3:Verb
+dare to :3:Aux
+dark blue :3:Adj
+de facto :3:Adv
+de jure :3:Adv
+devoid of :3:Prep
+draw down :3:Verb
+due to :3:Prep
+east german :3:Adj
+edge in :3:Verb
+egg on :3:Verb
+en bloc :3:Adv
+en masse :3:Adv
+en route :3:Adv
+et al. :3:Abbr
+et cetera :3:Adv
+even if :3:Conj
+even though :3:Conj
+ever expanding :3:Adj
+ex officio :3:Adv
+ex parte :3:Adj
+except for :3:Prep
+exclusive of :3:Prep
+fall away :3:Verb
+fall back :3:Verb
+fill in :3:Verb
+filled up :3:Adj
+find out :3:Verb
+fine tune :3:Verb
+fit in :3:Verb
+for all that :3:Conj
+for sake of :3:Prep
+for the sake of :3:Prep
+for want of :3:Prep
+give away :3:Verb
+give in :3:Verb
+give up :3:Verb
+given that :3:Conj
+go ahead :3:Verb
+granting that :3:Conj
+great deal :3:Adv
+grow up :3:Verb
+hand out :3:Verb
+hand over :3:Verb
+high income :3:Adj
+high quality :3:Adj
+hold back :3:Verb
+hold up :3:Verb
+hoped for :3:Adj
+how many :3:Pron
+how much :3:Pron
+in absentia :3:Adv
+in accordance with :3:Prep
+in addition :3:Adv
+in addition to :3:Prep
+in aid of :3:Prep
+in case :3:Conj
+in case of :3:Prep
+in charge of :3:Prep
+in common with :3:Prep
+in comparison with :3:Prep
+in compliance with :3:Prep
+in conformity with :3:Prep
+in consequence of :3:Prep
+in contact with :3:Prep
+in exchange for :3:Prep
+in favour of :3:Prep
+in front :3:Adv
+in front of :3:Prep
+in general :3:Adv
+in heat :3:Adv
+in lieu of :3:Prep
+in light of :3:Prep
+in line with :3:Prep
+in need of :3:Prep
+in order for :3:Conj
+in order that :3:Conj
+in particular :3:Adv
+in place of :3:Prep
+in position :3:Adv
+in process of :3:Prep
+in pursuit :3:Adv
+in re :3:Prep
+in reference to :3:Prep
+in regard to :3:Prep
+in relation to :3:Prep
+in respect of :3:Prep
+in respect to :3:Prep
+in return of :3:Prep
+in search of :3:Prep
+in situ :3:Adv
+in spite of :3:Prep
+in that :3:Conj
+in the event that :3:Conj
+in the face of :3:Prep
+in the interim :3:Adv
+in the interval :3:Adv
+in the light of :3:Prep
+in the process of :3:Prep
+in the raw :3:Adv
+in use :3:Adv
+in vacuo :3:Adv
+in view of :3:Prep
+in vitro :3:Adj
+inasmuch as :3:Conj
+inside of :3:Prep
+insofar as :3:Conj
+insofar that :3:Conj
+instead of :3:Prep
+inter alia :3:Adv
+ipso facto :3:Adv
+irrespective of :3:Prep
+just about :3:Adv
+keep in mind :3:Verb
+keep out :3:Verb
+keep up :3:Verb
+kick off :3:Verb
+laid back :3:Adj
+large scale :3:Adj
+latin american :3:Adj
+lay out :3:Verb
+lead on :3:Verb
+lead to :3:Verb
+leave out :3:Verb
+light up :3:Verb
+line up :3:Verb
+lock up :3:Verb
+long time :3:Adj
+look forward to :3:Verb
+look out :3:Verb
+low income :3:Adj
+low level :3:Adj
+lower than :3:Prep
+make out :3:Verb
+make up :3:Verb
+market driven :3:Adj
+mentally ill :3:Adj
+mix up :3:Verb
+mixed up :3:Adj
+more or less :3:Adv
+most often :3:Adj
+most remote :3:Adj
+move along :3:Verb
+must do :3:Adj
+near to :3:Prep
+need to :3:Aux
+needs to :3:Aux
+netherlands antillean :3:Adj
+next day :3:Adj
+next to :3:Prep
+no one :3:Pron
+north american :3:Adj
+north korean :3:Adj
+northern irish :3:Adj
+not as good :3:Adj
+not for profit :3:Adj
+not many :3:Adj
+not quite :3:Adv
+now and then :3:Adv
+now that :3:Conj
+null and void :3:Adj
+number one :3:Adj
+of late :3:Adj
+off of :3:Prep
+off the shelf :3:Adj
+old fashioned :3:Adj
+on account of :3:Prep
+on all sides :3:Adv
+on behalf of :3:Prep
+on grounds of :3:Prep
+on hold :3:Adv
+on pain of :3:Prep
+on the grounds of :3:Prep
+on the matter of :3:Prep
+on the part of :3:Prep
+on the strength of :3:Prep
+on time :3:Adv
+on to :3:Prep
+on top of :3:Prep
+once more :3:Adv
+one more :3:Adv
+op cit. :3:Abbr
+ought to :3:Aux
+out of :3:Prep
+out of control :3:Adj
+out of work :3:Adj
+outside of :3:Prep
+owing to :3:Prep
+paper based :3:Adj
+par excellence :3:Adv
+pari passu :3:Adj
+pay up :3:Verb
+per annum :3:Adv
+per capita :3:Adj
+per diem :3:Adj
+per se :3:Adv
+pick up :3:Verb
+play down :3:Verb
+point out :3:Verb
+preliminary to :3:Prep
+preparatory to :3:Prep
+previous to :3:Prep
+prima facie :3:Adj
+prior to :3:Prep
+pro forma :3:Adj
+pro rata :3:Adv
+provided that :3:Conj
+providing that :3:Conj
+pursuant to :3:Prep
+put by :3:Verb
+put down :3:Verb
+put forth :3:Verb
+put off :3:Verb
+put on :3:Verb
+put out :3:Verb
+put up :3:Verb
+regardless of :3:Prep
+relative to :3:Prep
+round up :3:Verb
+sas institute :3:Noun
+saudi arabian :3:Adj
+save that :3:Conj
+second class :3:Adj
+second level :3:Adj
+seeing that :3:Conj
+set at :3:Verb
+set back :3:Verb
+set off :3:Verb
+set on :3:Verb
+set out :3:Verb
+set up :3:Verb
+show up :3:Verb
+side by side :3:Adv
+sign up :3:Verb
+sine die :3:Adv
+single out :3:Verb
+so as :3:Conj
+so long :3:Interj
+so that :3:Conj
+soak up :3:Verb
+sought after :3:Adj
+south african :3:Adj
+south american :3:Adj
+south korean :3:Adj
+southeast asian :3:Adj
+spell out :3:Verb
+sri lankan :3:Adj
+stamp out :3:Verb
+stand out :3:Verb
+stand up :3:Verb
+stemming from :3:Prep
+step up :3:Verb
+sub judice :3:Adv
+subsequent to :3:Prep
+such as :3:Prep
+such that :3:Conj
+sui generis :3:Adj
+take advantage :3:Verb
+take away :3:Verb
+take in :3:Verb
+take off :3:Verb
+take on :3:Verb
+take out :3:Verb
+take over :3:Verb
+take place :3:Verb
+take up :3:Verb
+thank you :3:Interj
+thanks to :3:Prep
+third degree :3:Adj
+third party :3:Adj
+tie up :3:Verb
+tip over :3:Verb
+to a degree :3:Adv
+to the point :3:Adj
+together with :3:Prep
+too soon :3:Adv
+turn down :3:Verb
+turn in :3:Verb
+turn on :3:Verb
+turn out :3:Verb
+turn over :3:Verb
+turned on :3:Adj
+ultra vires :3:Adv
+under way :3:Adv
+up against :3:Prep
+up to :3:Prep
+upside down :3:Adv
+upwards of :3:Prep
+use up :3:Verb
+used to :3:Aux
+vice versa :3:Adv
+ward off :3:Verb
+warm blooded :3:Adj
+waste away :3:Verb
+wear out :3:Verb
+well known :3:Adj
+wind up :3:Verb
+wipe out :3:Verb
+with reference to :3:Prep
+with regard to :3:Prep
+with respect to :3:Prep
+with the exception of :3:Prep
+within reach :3:Adj
+without doubt :3:Adj
+work out :3:Verb
+wrapped up :3:Adj
+write down :3:Verb
+zero in :3:Verb

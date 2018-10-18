@@ -1,0 +1,14 @@
+if CREATOR = "&EM_NODEID" and upcase(NAME) =: upcase("&EM_NODEID") then do;
+   if upcase(NAME) =: upcase("&EM_NODEID._RAW") then do;
+      ROLE="INPUT";
+      LEVEL="INTERVAL";
+      end;
+   else do;
+      ROLE="SEGMENT";
+      LEVEL="BINARY";
+      end;
+   end;
+   if upcase(NAME) = "_DOCUMENT_" then do;
+      ROLE="ID";
+      LEVEL="NOMINAL";
+      end;

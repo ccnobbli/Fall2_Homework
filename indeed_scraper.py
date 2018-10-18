@@ -32,7 +32,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
 num_pages = 100
 
 # Job title to search for
-job = "Statistician"
+job = "data architect"
 
 # URL's we need
 base_url = "https://www.indeed.com/"

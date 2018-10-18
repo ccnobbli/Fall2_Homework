@@ -1,0 +1,11 @@
+if upcase(NAME)="_DOCUMENT_" then do;
+   ROLE="ID";
+   LEVEL="NOMINAL";
+end;
+if upcase(NAME)="_ITEM_" then do;
+   ROLE="TARGET";
+   LEVEL="NOMINAL";
+end;
+if upcase(NAME) in ("_COUNT_","_TERMNUM_") then do;
+   ROLE="REJECTED";
+end;
