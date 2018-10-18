@@ -28,12 +28,11 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
     if iteration == total:
         print()
 
-
 # Number of search result pages to scrape (~18 posts per page)
 num_pages = 100
 
 # Job title to search for
-job = "Business Analyst"
+job = "Statistician"
 
 # URL's we need
 base_url = "https://www.indeed.com/"
@@ -42,10 +41,14 @@ base_search_url = base_url + "jobs?q=" + job.replace(" ","_") + "&start="
 # HTML class id used to grab the html element containing the job description
 class_id = "jobsearch-JobComponent-description"
 
+
 # These lists will store each job description and location as individual list elements
 job_descriptions = list()
 job_locations = list()
 job_titles = list()
+
+# Will hold dictionaries, each being one job posting
+jobs = list()
 
 
 print("Looking for {0} pages of '{1}' job postings".format(num_pages, job))
@@ -56,7 +59,7 @@ num_done = 0
 
 for page_num in range(0, num_pages):
     # Get links from each page of the search results, up to a specified number of pages
-
+    time.sleep(float(random.randrange(5, 50)/100))
     # Retrieve the search results one page at a time (starting at 0, 10, 20, ....)
     while True:
         try:
@@ -67,31 +70,25 @@ for page_num in range(0, num_pages):
             continue
         break
 
-    # "turnstileLink" elements contain one job posting - find them all!
-    turnstileLinks = soup.find_all(class_="turnstileLink")
 
-    # Extract the location information from each posting
-    locations = soup.find_all(class_='location')
-    for location in locations:
-        job_locations.append(location.get_text())
+    search_results = soup.find_all("div", attrs={"data-tu":""})
 
 
-    # Extract the job description for each turnstileLink on this page of search results
-    for item in turnstileLinks:
-        # Give us a bit of a time delay so not to anger Indeed
-        time.sleep(float(random.randrange(5, 50)/100))
 
-        if item is not None:  # Sometimes we pick up empty job postings
-            # Extract title
-            try:
-                title = str(item.get_text())
-            except Exception as e:
-                title = ""
+    for result in search_results:
+        title = result.find("a", attrs={"data-tn-element":"jobTitle"})
+        loc = result.find("div", attrs={"class":"sjcl"})
+        if title is not None and loc is not None:
+            # We got a match for a sponsored job -
 
-            # Extract the URL to the job posting page
-            job_link = base_url + item.get('href')
+            # Grab the Title of the job, the job description, and the location
+            job_location = loc.find("div", attrs={'class':'location'}).get_text()
 
-            # Open that URL
+            job_title = title.get_text()
+
+            job_link = base_url + str(title.get('href'))[1:]
+
+            # Force Indeed to give us the job description
             while True:
                 try:
                     soup_job = BeautifulSoup(urllib.request.urlopen(job_link), 'html.parser')
@@ -101,58 +98,60 @@ for page_num in range(0, num_pages):
                     continue
                 break
 
-            # Extract the job description text from the individual job posting
-            job_panel = soup_job.find(class_=class_id)
-            if job_panel is not None:  # Sometimes there is no job_panel?
-                job_descriptions.append(job_panel.get_text())
-                job_titles.append(title)
-                printProgressBar(num_done, num_pages*17, prefix='Progress:', suffix='Complete', length=50)
+            job_desc = soup_job.find(class_=class_id)
+
+            if job_location is not None and job_title is not None and job_desc is not None:
+                # This job has a location, title, and description. Add it to our data
+                jobs.append({"job_location": job_location,
+                             "job_title": job_title,
+                             "job_description": job_desc.get_text(),  # Extract job desc text here
+                             "sponsored": True})
+
+                # Update progress bar
+                printProgressBar(num_done, num_pages*11, prefix='Progress:', suffix='Complete', length=50)
                 num_done += 1
-            else:
-                # Add an empty element so we know something went wrong
-                #job_descriptions.append("")
-                pass
+
+        else:
+            # Check if this element is an organic job (not sponsored)
+            title = result.find("h2", attrs={"class":"jobtitle"})
+            loc = result.find("span", attrs={"class":"location"})
+
+            if title is not None and loc is not None:
+                # We have a match for an organic job, extract info
+
+                # Grab the Title of the job
+                title_element = title.find("a", attrs={"data-tn-element":"jobTitle"})
+                job_title = title_element.get_text()
 
 
+                # Extract Location Text
+                job_location = loc.get_text()
 
+                while True:
+                    # Force Indeed to give us the job description
+                    try:
+                        soup_job = BeautifulSoup(urllib.request.urlopen(base_url + str(title_element.get('href'))), 'html.parser')
+                        break
+                    except (URLError, HTTPError) as e:
+                        time.sleep(5)
+                        continue
+                    break
 
-# Checking for same number of descriptions and locations
-print("{0} Total Jobs Scraped".format(len(job_descriptions)))  # Number of job descriptions found
-print("{0} Unique Jobs Scraped".format(len(list(set(job_descriptions)))))  # Number of unique job descriptions
+                # Extract Job Description
+                job_desc = soup_job.find(class_=class_id)
 
-#print(len(job_locations))  # Number of locations found
+                if job_location is not None and job_title is not None and job_desc is not None:
+                    # This job has a location, title, and description. Add it to our data
 
-# Remove duplications by making dataframe
+                    jobs.append({"job_location": job_location,
+                                 "job_title": job_title,
+                                 "job_description": job_desc.get_text(),
+                                 "sponsored": False})
+                    # Update progress bar
+                    printProgressBar(num_done, num_pages*11, prefix='Progress:', suffix='Complete', length=50)
+                    num_done += 1
 
-try:
-    job_data = pd.DataFrame({"title": job_titles,
-                             "text": job_descriptions,
-                             "location": job_locations})
-    job_data = job_data[~job_data.duplicated()]
-    save_file = "data/" + job.replace(" ","_") + "_text_data.csv"
-    job_data.to_csv(save_file)
-    print("Saved data to {0}".format(save_file))
-except Exception as e:
-    title_data = pd.DataFrame({"title": job_titles})
-    job_data = pd.DataFrame({"text": job_descriptions})
-    loc_data = pd.DataFrame({"location": job_locations})
-    title_data.to_csv("data/temp_job_title.csv")
-    job_data.to_csv("data/temp_job_desc.csv")
-    loc_data.to_csv("data/temp_job_loc.csv")
+jobs_df = pd.DataFrame(jobs)
+jobs_df = jobs_df[~jobs_df.job_description.duplicated()]
+jobs_df.to_csv("data/" + job.replace(" ", "_") +  "_text_data.csv")
 
-    print("Saved files to temporary files because of failure to create dataframe")
-
-
-time.sleep(10)
-
-
-
-# Possible Keywords to look out for:
-#     R
-#     Watson
-#     Python
-#     SQL
-#     Ruby
-#     SAS
-#     Enterprise Miner
-#     ...
