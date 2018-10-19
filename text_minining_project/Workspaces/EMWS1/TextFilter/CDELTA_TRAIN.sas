@@ -1,4 +1,0 @@
-if upcase(NAME) = "TEXTFILTER_RELEVANCE" then do;
-ROLE = "REJECTED";
-LEVEL = "INTERVAL";
-end;
