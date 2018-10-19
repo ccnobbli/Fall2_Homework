@@ -1,4 +1,4 @@
-PROC IMPORT OUT= WORK.b_clean 
+PROC IMPORT OUT= WORK.bioinf 
             DATAFILE= "C:\Users\Christopher\Documents\IAA\TimeSeries\HW4
 \data\indeed\bioinformatics_clean.csv" 
             DBMS=CSV REPLACE;
