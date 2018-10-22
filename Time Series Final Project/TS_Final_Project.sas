@@ -1,4 +1,4 @@
-libname TS "C:\Users\lasky\Google Drive\Graduate School _ Jobs\NCSU MSA\Programming\Git\Fall2_Homework\Time Series Final Project";
+libname TS "C:\Users\lasky\Google Drive\Graduate School _ Jobs\NCSU MSA\Programming\Git\Fall2_Homework\Fall2_Homework\Time Series Final Project";
 
 /* Turn All_Hourly.csv into All_hourly.sas7bdat */
 /*
